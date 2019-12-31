@@ -6,13 +6,11 @@
 const multiples = value => {
   const multiplesArray = [];
 
-  for (let i = 3; i < value; i ++) {
-    if (i % 3 === 0 || i % 5 === 0) multiplesArray.push(i)
+  for (let i = 3; i < value; i++) {
+    if (i % 3 === 0 || i % 5 === 0) multiplesArray.push(i);
   }
 
-  return multiplesArray.reduce((acc, val)=>{
-    return acc +val;
-  },0)
-}
+  return multiplesArray.reduce((acc, val) => acc + val, 0);
+};
 
-console.log(multiples(1000))
+console.log(multiples(1000));
