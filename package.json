@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nm": "sh -c 'nodemon src/$0.js'"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/sanjsanj/euler/issues"
   },
-  "homepage": "https://github.com/sanjsanj/euler#readme"
+  "homepage": "https://github.com/sanjsanj/euler#readme",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
+  }
 }
