@@ -13,6 +13,8 @@ const largestPalindrome = digits => {
     for (let second = max; second >= first; second--) {
       const result = first * second;
 
+      if (highest / first > max) break;
+
       if (
         result > highest &&
         `${result}` ===
