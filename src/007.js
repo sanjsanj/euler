@@ -22,7 +22,7 @@ const generatePrime = num => {
   const primesArray = [];
   let currentNum = 2;
 
-  while (primesArray.length < num) {
+  while (primesArray.length <= num) {
     if (_isPrime(currentNum, primesArray)) {
       primesArray.push(currentNum);
     }
