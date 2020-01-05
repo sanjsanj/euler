@@ -19,8 +19,8 @@ const _isPrime = (num, primesArray) => {
 };
 
 const sumOfPrimes = num => {
-  const primesArray = [2];
-  let currentNum = 3;
+  const primesArray = [];
+  let currentNum = 2;
 
   while (currentNum < num) {
     if (_isPrime(currentNum, primesArray)) {
